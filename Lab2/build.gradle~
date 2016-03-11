@@ -5,9 +5,7 @@ repositories {
 }
 
 dependencies {
-	compile group:'org.apache.commons',
-			name:'commons-csv',
-			version:'1.2'
+	compile 'org.apache.commons:commons-csv:jar:1.2'
 }
 
 task(run, dependsOn: 'classes', type: JavaExec) {
