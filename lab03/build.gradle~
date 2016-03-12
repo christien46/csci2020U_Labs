@@ -1,0 +1,30 @@
+apply plugin: 'java'
+
+
+
+ sourceCompatibility = 1.7
+ version = '1.0'
+ jar {
+    manifest {
+        attributes  'Main-Class': 'Test',
+                    'Implementation-Title': 'CSVDemoFile',
+                    'Implementation-Version': version
+    }
+ }
+
+ buildscript {
+   repositories {
+      flatDir dirs: '/home/christien/proguard5.2.1/lib'
+   }
+   dependencies {
+      classpath ':proguard:'
+   }
+ }
+
+task (minify, dependsOn: 'jar', type: proguard.gradle.ProGuardTask) {
+   configuration 'proguard.cfg'
+    
+   injars 'build/libs/lab03.jar'
+   outjars 'build/libs/lab03.min.jar'
+ }
+
