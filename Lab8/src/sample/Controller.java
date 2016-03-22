@@ -9,7 +9,7 @@ import java.util.ResourceBundle;
 
 public class Controller implements Initializable {
 
-    @FXML
+    /*@FXML
     private ResourceBundle resources;
 
     @FXML
@@ -31,7 +31,7 @@ public class Controller implements Initializable {
     private TableColumn<StudentRecord, Double> finalMark;
 
     @FXML
-    private TableColumn<StudentRecord, String> letterGrade;
+    private TableColumn<StudentRecord, String> letterGrade; */
 
 
 

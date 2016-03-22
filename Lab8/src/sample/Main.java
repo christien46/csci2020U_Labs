@@ -212,7 +212,7 @@ public class Main extends Application{
 
             Alert emptySID = new Alert(Alert.AlertType.WARNING, "Warning", ButtonType.OK);
             Window owner = ((Node) e.getTarget()).getScene().getWindow();
-            emptySID.setContentText("Student Id is empty, please enter a valid SID");
+            emptySID.setContentText("Please enter a valid SID");
             emptySID.initModality(Modality.APPLICATION_MODAL);
             emptySID.initOwner(owner);
             emptySID.showAndWait();
@@ -226,7 +226,7 @@ public class Main extends Application{
 
             Alert emptyMidterm = new Alert(Alert.AlertType.WARNING, "Warning", ButtonType.OK);
             Window owner = ((Node) e.getTarget()).getScene().getWindow();
-            emptyMidterm.setContentText("Midterm Mark is empty, please enter a valid Midterm Mark");
+            emptyMidterm.setContentText("Please enter a valid Midterm Mark");
             emptyMidterm.initModality(Modality.APPLICATION_MODAL);
             emptyMidterm.initOwner(owner);
             emptyMidterm.showAndWait();
@@ -240,7 +240,7 @@ public class Main extends Application{
 
             Alert emptyFinalExam = new Alert(Alert.AlertType.WARNING, "Warning", ButtonType.OK);
             Window owner = ((Node) e.getTarget()).getScene().getWindow();
-            emptyFinalExam.setContentText("Final Exam is empty, please enter a valid Final Exam Mark");
+            emptyFinalExam.setContentText("Please enter a valid Final Exam Mark");
             emptyFinalExam.initModality(Modality.APPLICATION_MODAL);
             emptyFinalExam.initOwner(owner);
             emptyFinalExam.showAndWait();
@@ -254,7 +254,7 @@ public class Main extends Application{
 
             Alert emptyAssignment = new Alert(Alert.AlertType.WARNING, "Warning", ButtonType.OK);
             Window owner = ((Node) e.getTarget()).getScene().getWindow();
-            emptyAssignment.setContentText("Assignment is empty, please enter a valid Assignment Mark");
+            emptyAssignment.setContentText("Please enter a valid Assignment Mark");
             emptyAssignment.initModality(Modality.APPLICATION_MODAL);
             emptyAssignment.initOwner(owner);
             emptyAssignment.showAndWait();
